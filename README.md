@@ -34,19 +34,19 @@ Edit the config to suit your folder locations or create shared folders where def
 
 # Radarr
   - /share/Container/radarr:/config   # App configuration data
-  - /share/Multimedia/Movies:/movies  # Folder on the NAS where movies are stored (Where Plex reads it from)
+  - /share/Media/Movies:/movies  # Folder on the NAS where movies are stored (Where Plex reads it from)
   - /share/Download/NZBGet/completed/Movies:/downloads  # Folder where completed movie downloads are stored (Where NZBGet drops them)
 
 # Sonarr
   - /share/Container/sonarr:/config   # App configuration data
-  - /share/Multimedia/TV:/tv          # Folder on the NAS where TV episodes are stored (Where Plex reads it from)
+  - /share/Media/TV:/tv          # Folder on the NAS where TV episodes are stored (Where Plex reads it from)
   - /share/Download/NZBGet/completed/TV:/downloads  # Folder where completed TV downloads are stored (Where NZBGet drops them)
 
 # Plex
   - /share/Container/plex:/config      # App configuration data
-  - /share/Multimedia/TV:/tv           # Folder on the NAS where TV episodes are stored
-  - /share/Multimedia/Movies:/movies   # Folder on the NAS where movies are stored
-  - /share/Multimedia/Pictures:/photos # Folder on the NAS where photos are stored
+  - /share/Media/TV:/tv           # Folder on the NAS where TV episodes are stored
+  - /share/Media/Movies:/movies   # Folder on the NAS where movies are stored
+  - /share/Media/Pictures:/photos # Folder on the NAS where photos are stored
   - /share/Backups/plex_db:/db_backups # Folder on the NAS for automatic database backups
 ```
 
