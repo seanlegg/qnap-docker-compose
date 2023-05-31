@@ -1,5 +1,17 @@
 version: "2.1"
 services:
+  watchtower:
+    image: containrrr/watchtower
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - WATCHTOWER_SCHEDULE: "0 2 * * *"
+      - WATCHTOWER_CLEANUP: "true"
+      - TZ: Etc/UTC
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: unless-stopped
+
   nzbget:
     image: ghcr.io/linuxserver/nzbget
     container_name: nzbget
